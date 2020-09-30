@@ -1,0 +1,126 @@
+.media-object-list h4{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    margin-bottom: 10px;
+}
+.media-object-list small{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    margin-bottom: 20px;
+    font-size: 90%;
+    height: 36px;
+}
+.img-container{
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+.img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.img-container .overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.img-container:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+}
+.img-container .img-container-action{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.prev-project-image{
+    overflow: hidden;
+    height: 100px;
+}
+.prev-project-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.prev-project-image .edit-image-action{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out 0.4s;
+}
+.prev-project-image:hover .edit-image-action{
+    top: 50%;
+    transition: all ease-in-out 0.4s;
+}
+input.form-control, select.form-control{
+    background: transparent;
+}
+.dropzone{
+    background: transparent !important;
+}
+.btn-sm{
+    padding: .25rem .5rem;
+    font-size: .71137rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.user-profile-image{
+    position: relative;
+    height: 350px;
+    overflow: hidden;;
+}
+.user-profile-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.user-profile-image .overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.user-profile-image:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+}
+.user-profile-image .user-profile-image-action{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mb-0{
+    margin-bottom: 0px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
